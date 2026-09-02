@@ -25,7 +25,42 @@ int main(void){
     n=n+1;
     printf("n+1= %lld\n", n);
 
-    printf("%.1lf", t/2);
+    printf("%.1lf\n", t/2);
+
+    int x=7;
+    int y=2;
+    printf("int     7/2=%d\n",x/y);
+
+    double p=7;
+    double q=2;
+    printf("double 7/2=%lf\n", p/q);
+    printf("7.0/2=%f\n\n", 7.0/2);
+    printf("(double)x/y=%f\n", (double)x/y);
+    printf("(double)(x/y)=%f\n", (double)(x/y));
+    printf("7%%2=%d\n", x/y);
+
+    int m=65;
+    double d=3.14159;
+    printf("%d\n", m);
+    printf("%c\n", m);
+    printf("%lf\n", d);
+    printf("%.2lf\n", d);
+    printf("     %.2lf\n", d);
+    printf("%50.2lf\n", d);
+    printf("%d\n", (int)d);
+
+
+    double c1=40; 
+    //uble f;
+    double g=1.8;
+    double h=32;
+    //printf("fanrenheit=%d\n",c1);
+    printf("%lf", c1*g+h);
+    printf("=f");
+
+
+
+
 
 
 
