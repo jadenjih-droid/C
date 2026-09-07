@@ -56,20 +56,80 @@ int main(void){
     double h=32;
     //printf("fanrenheit=%d\n",c1);
     printf("%lf", c1*g+h);
-    printf("=f");
+    printf("=f\n\n");
+
+    double c2=-20;
+    int f1=c2*1.8+32;
+    printf("%d\n", f1);
+
+    //int age;
+    //printf("type your age");
+    //scanf("%d", &age);
+    //printf("your age:%d\n", age);
+    //printf("your age in ten years:%d\n", age+10 );
+
+    //int a;
+    //int b;
+    //double d1;
+   // printf("Enter a number with two decimal points");
+    //scanf("%lf", &d1);
+    //printf("%.2f", d1);
+    
+    /** 
+    int score;
+    printf("Type a score (1-100)");
+    scanf("%d", &score);
+    if(score>=90){
+        printf("A+");
+    }else if(score>=85){
+        printf("A");
+    }else if(score>=80){
+        printf("A-");
+    }else if(score>=77){
+        printf("B+");
+    }else if(score>=73){
+        printf("B");
+    }else if(score>=67){
+        printf("C+");
+    }else if(score>=63){
+        printf("C");
+    }else if(score>=60){
+        printf("C-");
+    }else if(score>=57){
+        printf("D+");
+    }else if(score>=50){
+        printf("D");
+    }else if(score<=49){
+        printf("F");
+    }   
+    **/
+    
+    printf("for loop\n");
+    for(int i=1; i<=5;i+=2){
+        printf("%d\n", i);
+    }
+
+    printf("while loop\n");
+    int j=1; 
+    while(j<=5){
+        printf("%d\n", j);
+        j++;
+    
+    }
+
+    printf("do while loop\n");
+    int k=6;
+    do{
+        printf("%d", k);
+        k++;
+    }while(k<=5);
 
 
 
 
 
 
-
-
-
-
-
-
-    return 0;
+       return 0;
 }
 
 
