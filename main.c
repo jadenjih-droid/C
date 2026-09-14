@@ -113,7 +113,7 @@ int main(void){
     int j=1; 
     while(j<=5){
         printf("%d\n", j);
-        j++;
+        ++j;
     
     }
 
@@ -123,6 +123,47 @@ int main(void){
         printf("%d", k);
         k++;
     }while(k<=5);
+
+    printf("[break] 1-10 stop at six:\n");
+    for(int i=1; i<=10;i++){
+        printf("%d\n", i);
+        if(i==6){
+            break;
+        }
+    }
+
+    printf("[continue] 1-10 only odd numbers:\n");
+    for(int i=1; i<=10;i++){
+        if(i%2==1){
+            continue;
+        }
+        printf("%d\n", i);
+    }
+
+    
+    printf("Double for loop triangle:\n");
+    for(int i=1; i<=5;i++){
+        for(int j=1; j<=i;j++){
+            printf("0");
+        }
+     printf("\n");
+     
+    
+        
+    }
+    
+    printf("double for loop opposite triangle:\n");
+    for(int i=5; i>=1;i--){
+        for(int j=1; j<=i;j++){
+            printf("0");
+        }
+    printf("\n");
+    }
+
+    printf("")
+
+
+    
 
 
 
