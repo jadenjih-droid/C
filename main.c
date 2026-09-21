@@ -75,7 +75,7 @@ int main(void){
     //scanf("%lf", &d1);
     //printf("%.2f", d1);
     
-    /** 
+     
     int score;
     printf("Type a score (1-100)");
     scanf("%d", &score);
@@ -102,7 +102,7 @@ int main(void){
     }else if(score<=49){
         printf("F");
     }   
-    **/
+    
     
     printf("for loop\n");
     for(int i=1; i<=5;i+=2){
@@ -160,7 +160,7 @@ int main(void){
     printf("\n");
     }
 
-    printf("")
+    
 
 
     
