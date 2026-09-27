@@ -7,28 +7,27 @@ int main(void){
     int count=0;
     printf("Guess the number between 1-100\n");
     scanf("%d", &guess);
+    count++;
 
-    
-    if(guess==ANSWER){
-        printf("CORRECTTT!\n");
-    }
-    if(guess>ANSWER){
-        printf("lower\n");
-    }
-    if(guess<ANSWER){
-        printf("higher\n");
-    }
     while(guess>ANSWER || guess<ANSWER){
-        int guess=0;
-            if (guess=ANSWER){
-                break;
-            }
-
-                
-            
-            
+        
+        if(guess>ANSWER){
+            printf("lower\n");
+        }
+        if(guess<ANSWER){
+            printf("higher\n");
+        }
+        
+        scanf("%d", &guess);
+        count++;
+    }
+    if (guess==ANSWER){
+        printf("CORREECTT!!!!\n");
+        printf("It took you %d trys", count );
+        
         
     }
+    
     
 
 
