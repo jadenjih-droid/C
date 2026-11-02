@@ -4,19 +4,17 @@
 
 int main(void)
 {
+    const double TAX = 0.13;
     double small;
     double large;
     double medium;
     int pattyamount;
-    int pattysubtotal = small*amount;
-    int pattytax = pattytotal*TAX;
-    int pattytotal = pattytax+pattytotal;
+    double pattysubtotal = small*pattyamount;
+    double pattytax = pattysubtotal*TAX;
+    double pattytotal = pattytax+pattysubtotal;
     
     
-    
-    
-    
-    const double TAX = 0.13;
+
     const char patsize = 'S';
     
     
@@ -39,8 +37,8 @@ int main(void)
     printf("\nSMALL : %lf", small);
     printf("\nMEDIUM : %lf", medium);
     printf("\nLARGE %lf", large);
-    printf("\nNumber of shirts Patty is buying :\n\n ");
-    scanf("%d", &amount);
+    printf("\nNumber of shirts Patty is buying :");
+    scanf("%d", &pattyamount);
 
     //printf("\npatty's shopping cart...\n");
     //printf("contains : %d shirts", amount);
@@ -48,8 +46,8 @@ int main(void)
     //printf("\nTaxes: %lf", small*amount*TAX);
     //printf("\nTotal: %lf\n", small*amount*TAX+(small*amount));
     
-    printf("customer size price QTY sub-total tax total\n");
-    printf("patty      %-4c %5.2lf %3d %9.4lf %9.4lf %9.4lf \n", patsize, small, pattyamount, pattysubtotal, pattytax, pattytotal );
+    printf("customer size price QTY    sub-total tax      total\n");
+    printf("patty    %-4c %5.2lf %3d %9.4lf %9.4lf %9.4lf \n", patsize, small, pattyamount, pattysubtotal, pattytax, pattytotal );
     
 
 
