@@ -42,6 +42,7 @@ int main(void)
     printf("\nSub-total: %lf", small*amount);
     printf("\nTaxes: %lf", small*amount*TAX);
     printf("\nTotal: %lf\n", small*amount*TAX+(small*amount));
+    
 
 
 
