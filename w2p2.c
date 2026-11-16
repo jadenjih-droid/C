@@ -35,10 +35,19 @@ int main(void)
     const char sallysize = 'M';
     const char tommysize = 'L';
 
-    //coins for subtotal
-    int subtoonies;
-    int subloonies;
-    int subquarters
+    //coins
+    double toonies = 2.0000;
+    double loonies = 1.0000;
+    double quarters = 0.2500;
+    double dimes = 0.1000;
+    double nickels = 0.0500;
+    double pennies = 0.0100;
+
+    //amount coins
+    double Atoonies = 0.0000;
+
+
+    
     
     
 
@@ -92,6 +101,8 @@ int main(void)
     Atax = pattytax+sallytax+tommytax;
     Atotal = pattytotal+sallytotal+tommytotal;
 
+    
+
 
 
     
@@ -102,16 +113,25 @@ int main(void)
     printf("-------- ---- ----- --- --------- --------- ---------\n");
     printf("%33.4lf %9.4lf %9.4lf\n", Asubtotal, Atax, Atotal);
 
+    Asubtotal = Atoonies % toonies;
+    
     printf("\nDaily retail sales represented by coins\n");
             printf("=======================================\n");
             printf("Sales EXCLUDING tax\n");
             printf("Coin     Qty   Balance\n");
             printf("-------- --- ---------\n");
+            printf("             %lf\n", Asubtotal);
+            printf("Toonies %lf", Atoonies);
+            
+
+
+    
+
+          
 
 
 
-    subtoonies = Asubtotal/2
-    subloonies = Asubtotal-(subtoonies*2)
+   
 
 
 
