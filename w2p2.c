@@ -36,15 +36,16 @@ int main(void)
     const char tommysize = 'L';
 
     //coins
-    double toonies = 2.0000;
-    double loonies = 1.0000;
-    double quarters = 0.2500;
-    double dimes = 0.1000;
-    double nickels = 0.0500;
-    double pennies = 0.0100;
+    int toonies = 200;
+    int loonies = 100;
+    int quarters = 25;
+    int dimes = 10;
+    int nickels = 5;
+    int pennies = 1;
 
     //amount coins
-    double Atoonies = 0.0000;
+    int Atoonies;
+    int Aloonies;
 
 
     
@@ -113,7 +114,19 @@ int main(void)
     printf("-------- ---- ----- --- --------- --------- ---------\n");
     printf("%33.4lf %9.4lf %9.4lf\n", Asubtotal, Atax, Atotal);
 
-    Asubtotal = Atoonies % toonies;
+    int Rsubtotal = Asubtotal*100;
+    
+    Atoonies = Rsubtotal % toonies;
+    Atoonies = Atoonies/100;
+    double Tooniesbalance = Asubtotal-Atoonies;
+    
+    //printf("Toonies  %d",  Atoonies);
+    //printf("   %lf\n", Tooniesbalance);
+    
+    Tooniesbalance = Tooniesbalance*100;
+    Aloonies =  (int)Tooniesbalance % loonies;
+    
+    
     
     printf("\nDaily retail sales represented by coins\n");
             printf("=======================================\n");
@@ -121,7 +134,14 @@ int main(void)
             printf("Coin     Qty   Balance\n");
             printf("-------- --- ---------\n");
             printf("             %lf\n", Asubtotal);
-            printf("Toonies %lf", Atoonies);
+            
+            printf("Toonies  %d",  Atoonies);
+            printf("   %lf\n", Tooniesbalance);
+
+            printf("Loonies %d", Aloonies);
+            //printf("    %lf\n", Looniesbalance);
+
+           
             
 
 
